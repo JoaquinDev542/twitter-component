@@ -1,8 +1,23 @@
 .Cards {
+    background-color: #333;
     display: grid;
     gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    color: #fff;
+    &-h3 {
+        margin: 0;
+    }
+    &-link {
+        color: #1d9bf0;
+        text-decoration: none;
+    }
 }
+
 .Card {
+    display: grid;
+    gap: 1.5rem;
+
     &-article {
         display: flex;
         align-items: center;

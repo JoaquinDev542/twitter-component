@@ -4,15 +4,18 @@ import "./followers.scss"
 
 export const Followers = () => {
     return(
-        <Card/>       
+        <section className="Cards">
+            <h3 className="Cards-h3">Who to follow</h3>
+            <Card/>
+            <a href="#" className="Cards-link">Show more</a>
+        </section>
     )
 }
 
 const Card = () => {
     const { follower } = useContext(GlobalContext)
-
     return (
-        <div className="Cards">
+        <div className="Card">
             { follower.map( ( { id, name , userName , avatar , follow } ) =>
                 <article key={ id } className="Card-article">
                     <header className="Card-header">
@@ -30,5 +33,4 @@ const Card = () => {
         </div>
     )
 }
-
 // `https://unavatar.io/${userName}`
